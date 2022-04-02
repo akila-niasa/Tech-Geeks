@@ -4,7 +4,7 @@ import './Blog.css'
 
 const Blog = ({blog}) => {
     const navigate=useNavigate()
-    console.log(blog.blog);
+    console.log(blog);
     return (
         <div className='blog-container'>
         <div className='blog-image-container'>
@@ -14,7 +14,7 @@ const Blog = ({blog}) => {
           <div>
             <h1>{blog.title}</h1>
             <div className='author-name'>
-              <img src={blog.indicator} alt='' />
+              {/* <img src={indicator} alt='' /> */}
               <p>{blog.admin}</p>
             </div>
           </div>
